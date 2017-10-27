@@ -1,14 +1,25 @@
 {
-  "name": "ts",
-  "version": "1.0.0",
-  "description": "",
+  "name": "simple-time-series",
+  "version": "0.1.5",
+  "description": "Simple time series - convert any collection to timeseries",
+  "private": false,
+  "keywords": [
+    "timeseries",
+    "pandas in javascript",
+    "collection to timeseries"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/runner"
   },
-  "author": "",
+  "author": "Doron Segal <segaldoron.com>",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.19.1"
+    "hoek": "^6.1.3",
+    "moment": "^2.24.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doron2402/simple-time-series.git"
   }
 }

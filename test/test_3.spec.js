@@ -1,6 +1,6 @@
 'use strict';
 
-const ts = require('./index');
+const ts = require('../index');
 
 const collection = [
   {
@@ -40,7 +40,8 @@ const collection = [
     wmg: 60
   }
 ]
-ts.mergeCollectionByTimestamp(collection,
+
+const results = ts.mergeCollectionByTimestamp(collection,
   {
     start: '2017-01-01T00:00:00.000Z',
     end: '2017-01-01T01:00:00.000Z',
@@ -48,4 +49,6 @@ ts.mergeCollectionByTimestamp(collection,
     timeIn: 'minutes',
     key: 'timestamp',
     dateFormat: 'iso'
-  });
+  }
+);
+
