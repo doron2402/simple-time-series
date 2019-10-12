@@ -106,5 +106,6 @@ var result = ts.mergeCollectionByTimestamp(collection,
 
 const LAST_RESULT = result.length - 1;
 const LAST_COLLECTION = collection.length - 1;
-
+Assert.notDeepEqual(collection[LAST_COLLECTION].value, result[LAST_RESULT]);
+Assert.equal(collection[14].value, result[LAST_RESULT].value);
 Assert.equal(result.length, 11);
