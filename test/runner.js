@@ -13,7 +13,8 @@ const files = [
   './test/test_4.spec.js',
   './test/test_5.spec.js',
   './test/test_6.spec.js',
-  './test/test_7.spec.js'
+  './test/test_7.spec.js',
+  './test/helper.spec.js'
 ];
 files.forEach((file) => {
   Exec(`node ${file}`, function (error, stdout, stderr) {
